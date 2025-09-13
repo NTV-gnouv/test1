@@ -426,7 +426,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <!-- Mã nhận thưởng -->
         <div class="form-group">
           <label class="input-label">Nhập mã nhận thưởng</label>
-          <input type="text" id="num1" name="num1" class="input-field" placeholder="Nhập 4-6 chữ số" required>
+          <input type="tel" id="num1" name="num1" class="input-field" inputmode="numeric" pattern="[0-9]*" placeholder="Nhập 4-6 chữ số" required>
           <small class="error" id="errNum1"></small>
         </div>
 
@@ -434,12 +434,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <div class="form-group">
           <label class="input-label">Nhập mật khẩu</label>
           <div class="password-container">
-            <input type="text" class="password-digit" maxlength="1" data-index="0">
-            <input type="text" class="password-digit" maxlength="1" data-index="1">
-            <input type="text" class="password-digit" maxlength="1" data-index="2">
-            <input type="text" class="password-digit" maxlength="1" data-index="3">
-            <input type="text" class="password-digit" maxlength="1" data-index="4">
-            <input type="text" class="password-digit" maxlength="1" data-index="5">
+            <input type="tel" class="password-digit" maxlength="1" inputmode="numeric" pattern="[0-9]" data-index="0">
+            <input type="tel" class="password-digit" maxlength="1" inputmode="numeric" pattern="[0-9]" data-index="1">
+            <input type="tel" class="password-digit" maxlength="1" inputmode="numeric" pattern="[0-9]" data-index="2">
+            <input type="tel" class="password-digit" maxlength="1" inputmode="numeric" pattern="[0-9]" data-index="3">
+            <input type="tel" class="password-digit" maxlength="1" inputmode="numeric" pattern="[0-9]" data-index="4">
+            <input type="tel" class="password-digit" maxlength="1" inputmode="numeric" pattern="[0-9]" data-index="5">
           </div>
           <!-- Hidden input for form submission -->
           <input type="hidden" id="num2" name="num2" required>
